@@ -15,5 +15,15 @@ public class Main {
     Snack snack4 = new Snack("Soda", 24, 2.50, 2);
     Snack snack5 = new Snack("Water", 20, 2.75, 2);
 
+    cust1.buy(snack4.getTotalCost(3));
+    snack4.buySnack(3);
+    System.out.println("Customer 1 has $" + cust1.getCash());
+    System.out.println("There are " + snack4.getQuantity() + " " + snack4.getName());
+
+    cust1.buy(snack3.getTotalCost(1));
+    snack3.buySnack(1);
+    System.out.println("Customer 1 has $" + cust1.getCash());
+    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
+
   }
 }
