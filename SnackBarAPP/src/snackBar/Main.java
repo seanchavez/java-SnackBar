@@ -39,11 +39,15 @@ public class Main {
     System.out.println("There are " + snack2.getQuantity() + " " + snack2.getName());
 
     snack3.addQuantity(12);
-    System.out.println("There are " + snack2.getQuantity() + " " + snack2.getName());
+    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
 
     cust2.buy(snack3.getTotalCost(3));
     snack3.buySnack(3);
     System.out.println("Customer 2 has $" + cust2.getCash());
     System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
+  }
+
+  public static void main(String[] args) {
+    run();
   }
 }
