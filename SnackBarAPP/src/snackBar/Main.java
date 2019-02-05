@@ -17,34 +17,34 @@ public class Main {
 
     cust1.buy(snack4.getTotalCost(3));
     snack4.buySnack(3);
-    System.out.println("Customer 1 has $" + cust1.getCash());
-    System.out.println("There are " + snack4.getQuantity() + " " + snack4.getName());
+    System.out.println(cust1.getName() + " has $" + cust1.getCash());
+    System.out.println("There are " + snack4.getQuantity() + " " + snack4.getName() + "s");
 
     cust1.buy(snack3.getTotalCost(1));
     snack3.buySnack(1);
-    System.out.println("Customer 1 has $" + cust1.getCash());
-    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
+    System.out.println(cust1.getName() + " has $" + cust1.getCash());
+    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName() + "s");
 
     cust2.buy(snack4.getTotalCost(2));
     snack4.buySnack(2);
-    System.out.println("Customer 2 has $" + cust2.getCash());
-    System.out.println("There are " + snack4.getQuantity() + " " + snack4.getName());
+    System.out.println(cust2.getName() + " has $" + cust2.getCash());
+    System.out.println("There are " + snack4.getQuantity() + " " + snack4.getName() + "s");
 
     cust1.addCash(10.00);
-    System.out.println("Customer 1 has $" + cust1.getCash());
+    System.out.println(cust1.getName() + " has $" + cust1.getCash());
 
     cust1.buy(snack2.getTotalCost(1));
     snack2.buySnack(1);
-    System.out.println("Customer 1 has $" + cust1.getCash());
-    System.out.println("There are " + snack2.getQuantity() + " " + snack2.getName());
+    System.out.println(cust1.getName() + " has $" + cust1.getCash());
+    System.out.println("There are " + snack2.getQuantity() + " " + snack2.getName() + "s");
 
     snack3.addQuantity(12);
-    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
+    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName() + "s");
 
     cust2.buy(snack3.getTotalCost(3));
     snack3.buySnack(3);
-    System.out.println("Customer 2 has $" + cust2.getCash());
-    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName());
+    System.out.println(cust2.getName() + " has $" + cust2.getCash());
+    System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName() + "s");
   }
 
   public static void main(String[] args) {
